@@ -208,6 +208,7 @@ namespace RC::LuaType
 
                         if (!param_next->IsA<Unreal::FStructProperty>() && !param_next->IsA<Unreal::FArrayProperty>())
                         {
+                            lua.discard_value();
                             continue;
                         }
                     }
